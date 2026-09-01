@@ -1,0 +1,61 @@
+{% extends    'base.html' %}
+
+{% block titulo %}
+Cadastro
+{% endblock %}
+
+{% block conteudo %}
+<div class="container2">
+
+     <div class= "cadastro">
+
+    <form>  
+    <label> Nome</label>
+    <input type="text" placeholder="Seu nome Completo" required>
+    
+    <label> Telefone</label>
+    <input type="text" placeholder="(00)00000-0000" required>
+
+    <label> CPF</label>
+    <input type="text" placeholder="000.000.000-00" required>
+    
+    
+    <div class="linha">
+    
+       <div class="campo">
+           <label> Peso(kg)</label>
+           <input type="number" placeholder="65" 
+           required>
+     </div>
+
+
+    <div class="campo">
+        <label> Altura(cm)</label>
+        <input type="number"placeholder="1.65" required>
+    </div>
+
+    </div>
+
+    <label> Inicio da Gestação</label>
+    <input type="date" required>
+
+    <label> Acompanhamento pré-natal</label>
+    <div class="opcoes">
+        <input type="radio" id="sim"
+        name="prenatal" value="sim">
+        <label for="sim">Sim</label>
+
+        <input type="radio" id="nao" name="prenatal"
+        value="nao">
+        <label for="nao"> Não</label>
+    </div>
+
+    <button type="submit">Cadastrar</button>
+
+
+    </form>
+   </div>
+
+</div>
+
+{% endblock   %}

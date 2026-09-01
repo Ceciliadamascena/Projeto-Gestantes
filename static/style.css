@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #1d0938;
+    background-size: cover;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background: pink;
+    border-radius: 50%;
+
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.card {
+    background-color: #9e70db;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.card input {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 15px;
+    background: #4d2b72;
+    color: white;
+    box-sizing: border-box;
+}
+
+.card label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.card button {
+    color: #41233e;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+
+    background: linear-gradient(
+        90deg,
+        #d9b3ff,
+        #ffb3c7
+    );
+}
+
+.card button:hover {
+    background: #e07bca;
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 80%;
+    }
+}
+
+.cadastro-link {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-size: 16px;
+
+}
+
+.cadastro-link a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cadastro-link a:hover{
+    text-decoration: underline;
+}
+
+.container2{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.cadastro{
+    background: #7117d1;;
+    padding: 40px;
+   border-radius: 20px;
+    box-shadow: 0 0 20px rgba(130, 100, 255, 0.3);
+    width: 500px;
+
+}
+
+.cadastro input{
+     width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 30px;
+    background: #bf93ee;
+    color: white;
+    outline:none;
+    box-sizing: border-box;
+}
+
+.cadastro label{
+    color: white;
+    font-size: 15px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+.cadastro form{
+    display: flex;
+    flex-direction: column;
+}
+
+.linha{
+    display: flex;
+    gap:20px;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.campo{
+    flex: 1;
+    display:flex;
+    flex-direction: column;
+}
+
+.campo input{
+    width: 100%;
+    box-sizing: border-box;
+}
+
