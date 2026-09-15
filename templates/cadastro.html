@@ -1,8 +1,6 @@
-{% extends    'base.html' %}
+{% extends 'base.html' %}
 
-{% block titulo %}
-Cadastro
-{% endblock %}
+{% block title %}Cadastro {% endblock  title%}
 
 {% block conteudo %}
 <div class="container2">
@@ -49,6 +47,10 @@ Cadastro
         value="nao">
         <label for="nao"> Não</label>
     </div>
+    <label> Email </label>
+    <div class="Email">
+        <input type="text" placeholder="Email" required>
+    </div>
 
     <button type="submit">Cadastrar</button>
 
@@ -58,4 +60,4 @@ Cadastro
 
 </div>
 
-{% endblock   %}
+{% endblock  conteudo %}
