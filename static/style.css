@@ -105,63 +105,151 @@ body {
     text-decoration: underline;
 }
 
-.container2{
-     display: flex;
-    justify-content: center;
+.container2 {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 40px;
     min-height: 100vh;
+
 }
 
-.cadastro{
-    background: #9e70db;
-    padding: 40px;
-    border-radius: 20px;
+.cadastro {
+    background-color: #9e70db;
+    padding: 30px;
+    border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     width: 500px;
-
+    box-sizing: border-box;
 }
 
-.cadastro input{
-     width: 100%;
-    padding: 14px;
+.cadastro input {
+    width: 100%;
+    padding: 15px;
     margin-top: 10px;
     margin-bottom: 15px;
     border: none;
-    border-radius: 30px;
-    background: #4d2b72;;
+    border-radius: 15px;
+    background: #4d2b72;
     color: white;
-    outline:none;
+    outline: none;
     box-sizing: border-box;
 }
 
-.cadastro label{
+.cadastro label {
+    display: block;
     color: white;
     font-size: 15px;
-    margin-top: 12px;
+    margin-top: 10px;
     margin-bottom: 6px;
 }
 
-.cadastro form{
+.cadastro form {
     display: flex;
     flex-direction: column;
 }
 
-.linha{
+.linha {
     display: flex;
-    gap:20px;
+    gap: 20px;
     justify-content: space-between;
     width: 100%;
-
 }
 
-.campo{
+.campo {
     flex: 1;
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
-.campo input{
+.campo input {
     width: 100%;
     box-sizing: border-box;
 }
 
+.cadastro button {
+    color: #41233e;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+
+    background: linear-gradient(
+        90deg,
+        #d9b3ff,
+        #ffb3c7
+    );
+}
+
+.cadastro button:hover {
+    background: #e07bca;
+}
+
+.titulo-cadastro {
+    color: rgb(228, 188, 224);
+    font-size: 40px;
+}
+
+
+.opcoes {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.opcao {
+    flex: 1;
+    margin: 0;
+}
+
+.opcao input {
+    display: none;
+}
+
+.opcao span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 48px;
+
+    background: #4d2b72;
+    color: #cbb8d9;
+
+    border-radius: 20px;
+    cursor: pointer;
+
+    user-select: none;
+}
+
+
+.opcao input:checked + span {
+    background: linear-gradient(
+        90deg,
+        #d9b3ff,
+        #ffb3c7
+    );
+
+    color: #41233e;
+}
+
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-size: 16px;
+
+}
+
+.login-link a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-link a:hover{
+    text-decoration: underline;
+}

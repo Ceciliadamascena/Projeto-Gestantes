@@ -11,9 +11,16 @@ db.init_app(app)
 # migrate = Migrate(app,db)
 
 @app.route("/")
+def login():
+    return render_template("login.html")
+
+@app.route("/home")
 def home():
-    gestante= db.session.query(Gestante).all()
-    return render_template("index.html")
+    return render_template("home.html")
+
+@app.route("/cadastro")
+def cadastro():
+    return render_template("cadastro.html")
    
 class Gestante(db.Model):
 

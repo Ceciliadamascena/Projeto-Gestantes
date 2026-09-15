@@ -4,6 +4,9 @@
 
 {% block conteudo %}
 <div class="container2">
+    <div>
+  <h1 class="titulo-cadastro">Cadastro</h1>
+
 
      <div class= "cadastro">
 
@@ -38,15 +41,35 @@
     <input type="date" required>
 
     <label> Acompanhamento pré-natal</label>
-    <div class="opcoes">
-        <input type="radio" id="sim"
-        name="prenatal" value="sim">
-        <label for="sim">Sim</label>
+   <div class="opcoes">
+    <label class="opcao">
+        <input type="radio" name="pre_natal" value="sim">
+        <span>Sim</span>
+    </label>
 
-        <input type="radio" id="nao" name="prenatal"
-        value="nao">
-        <label for="nao"> Não</label>
-    </div>
+    <label class="opcao">
+        <input type="radio" name="pre_natal" value="nao">
+        <span>Não</span>
+    </label>
+</div>
+
+<label> Sexo do bebê</label>
+<div class="opcoes sexo">
+    <label class="opcao">
+        <input type="radio" name="sexo" value="feminino">
+        <span>♀ Feminino </span>
+    </label>
+
+    <label class= "opcao">
+        <input type="radio" name="sexo " value="masculino">
+         <span> ♂ Masculino </span>
+    </label>
+
+    <label class="opcao">
+        <input type="radio " name="sexo" value="nao_sei">
+        <span> 👶 Não sei </span>
+    </label>
+</div>
     <label> Email </label>
     <div class="Email">
         <input type="text" placeholder="Email" required>
@@ -54,10 +77,15 @@
 
     <button type="submit">Cadastrar</button>
 
+    
+    <p class=" login-link">
+                    Já tem uma conta?
+                    <a href="{{url_for('login') }}"> Entre </a>
+                </p>
 
     </form>
    </div>
-
+</div>
 </div>
 
 {% endblock  conteudo %}
