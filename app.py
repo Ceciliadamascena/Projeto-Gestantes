@@ -21,6 +21,11 @@ def home():
 @app.route("/cadastro")
 def cadastro():
     return render_template("cadastro.html")
+
+
+@app.route("/add_diario")
+def adicionar_diario():
+    return render_template("add_diario.html")
    
 class Gestante(db.Model):
 
@@ -66,62 +71,6 @@ def adicionar():
 
 
 
-# # def inserir(nome, telefone, cpf, peso, altura,
-#             inicio_gestacao, prenatal, email):
-
-#     conexao = conectar()
-#     cursor = conexao.cursor()
-
-#     cursor.execute("""
-#         INSERT INTO gestantes
-#         (nome, telefone, cpf, peso, altura,
-#          inicio_gestacao, prenatal, email)
-#         VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-#     """, (
-#         nome,
-#         telefone,
-#         cpf,
-#         peso,
-#         altura,
-#         inicio_gestacao,
-#         prenatal,
-#         email
-#     ))
-
-#     conexao.commit()
-#     conexao.close()
-# @app.route("/adicionar", methods=["GET", "POST"])
-# def adicionar():
-
-#     if request.method == "POST":
-
-#         nome = request.form["nome"]
-#         telefone = request.form["telefone"]
-#         cpf = request.form["cpf"]
-#         peso = request.form["peso"]
-#         altura = request.form["altura"]
-#         inicio_gestacao = request.form["inicio_gestacao"]
-#         prenatal = request.form["prenatal"]
-#         email = request.form["email"]
-
-#         inserir(
-#             nome,
-#             telefone,
-#             cpf,
-#             peso,
-#             altura,
-#             inicio_gestacao,
-#             prenatal,
-#             email
-#         )
-
-#         return redirect("/listar")
-
-#     return render_template("adicionar.html")
-
-# @app.route("/cadastro")
-# def cadastro():
-#     return render_template("cadastro.html")
 
 with app.app_context():
     db.create_all()

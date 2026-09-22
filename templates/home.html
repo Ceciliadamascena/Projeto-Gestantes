@@ -1,18 +1,95 @@
-{% extends 'base.html'%}
 
-{% block title%}  Página principal {% endblock title%}
+{% extends "base.html" %}
 
-{% block conteudo %} 
-<div> 
-   <div class=" card"
-   <span> ⚠ </span>
-   <h3> Sinais </h3>
+{% block conteudo %}
+
+<div class="calendario">
+
+    <div class="topo-calendario">
+        <span>22 de setembro</span>
+    </div>
+
+    <div class="dias-semana">
+        <span>D</span>
+        <span>S</span>
+        <span>T</span>
+        <span>Q</span>
+        <span>Q</span>
+        <span>S</span>
+        <span>S</span>
+    </div>
+
+    <div class="dias">
+
+        <div class="dia">
+            <span>20</span>
+        </div>
+
+        <div class="dia">
+            <span>21</span>
+        </div>
+
+        <div class="dia hoje">
+            <small>HOJE</small>
+            <span>22</span>
+        </div>
+
+        <div class="dia">
+            <span>23</span>
+        </div>
+
+        <div class="dia">
+            <span>24</span>
+        </div>
+
+        <div class="dia">
+            <span>25</span>
+        </div>
+
+        <div class="dia">
+            <span>26</span>
+        </div>
+
+    </div>
+
 </div>
 
+<div class="home">
+
+    <h1>22 De Setembro</h1>
+
+    <div class="gestacao">
+        <p>Sua gestação está em</p>
+        <h2>16 semanas</h2>
+        <p>Seu bebê está do tamanho de 🥑 abacate</p>
+
+        <button>＋ Registrar sintomas</button>
+    </div>
+
+    <h2>Meu conteúdo diário</h2>
+
+    <div class="conteudos">
+
+        <div class="conteudo">
+            <span>＋</span>
+        </div>
+
+        <div class="conteudo">
+            <span>↗</span>
+        </div>
+
+        <div class="conteudo">
+            <span>♡</span>
+        </div>
+
+        <div class="conteudo">
+            <span>⚠</span>
+        </div>
+
+    </div>
+
 </div>
 
+<div class="dia hoje">
 
-
-
-
-{% endblock conteudo%}
+{% endblock conteudo %}

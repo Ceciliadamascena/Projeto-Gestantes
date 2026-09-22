@@ -14,16 +14,17 @@ Login
 
         <div class="card">
 
-            <form>
-                <label>Nome da Gestante</label>
-                <input type="text" placeholder="Seu Nome" required>
+       <form action="{{ url_for('home') }}">
+    
+    <label>Nome da Gestante</label>
+    <input type="text" placeholder="Seu Nome" required>
 
-                <label>Senha</label>
-                <input type="password" placeholder="Digite sua senha" required>
+    <label>Senha</label>
+    <input type="password" placeholder="Digite sua senha" required>
 
-                <button type="submit">Entrar</button>
-                
-            </form>
+    <button type="submit">Entrar</button>
+
+</form>
          
         </div>
  
